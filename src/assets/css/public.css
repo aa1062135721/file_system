@@ -1,0 +1,83 @@
+header,p,ul,html,body,span,a,div,i,input,button,video{
+	padding: 0;
+	margin: 0;
+  line-height: 1;
+  font-family: "微软雅黑";
+  outline: none;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+/*解决浏览器长按复制*/
+*{
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+/*解决浏览器长按复制后，ios输入框不能输入*/
+input , textarea{
+	-webkit-user-select:auto;
+}
+html,body,.pageBox{
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+}
+.imgDefault{
+   pointer-events: none;
+}
+.pageBox{
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling:touch;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+input{
+  background: none;
+  border: 0;
+}
+img{
+  display: block;
+}
+/*单行省略*/
+.sheny{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+/*多行省略*/
+.allshe{
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+/*3行省略*/
+.moreTxt{
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+/* flex布局 */
+.dis{
+  display: flex;
+}
+.disAl{
+  display: flex;
+  align-items: center;
+}
+.disCen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

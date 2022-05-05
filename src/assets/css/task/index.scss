@@ -1,0 +1,116 @@
+.customRight{
+    display: flex;
+    align-items:center;
+    img{
+        width: 40px;
+        height: 40px;
+    }
+    img:not(:first-child){
+        margin-left: 37px;
+    }
+}
+.tabs{
+    width: 100%;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    z-index: 200;
+}
+.task_box{
+    // min-height: 100vh;
+    padding-top: 200px !important;
+    background-color: #F5F5F5;
+}
+::v-deep .van-tabs__wrap{
+    height: 100px !important;
+}
+::v-deep .van-tab__text--ellipsis{
+    font-size: 28px !important;
+}
+::v-deep .van-tabs__line{
+    height: 6px;
+    width: 60px;
+    border-radius: 3px;
+}
+.list_box{
+    box-sizing: border-box;
+    padding: 23px 30px 30px 30px;
+}
+.list{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px 0px rgba(185, 185, 185, 0.2);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    margin-bottom: 22px;
+    .head{
+        box-sizing: border-box;
+        padding: 0 27px;
+        height: 94px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #EEEEEE;
+        justify-content: space-between;
+        .title{
+            display: flex;
+            align-items: center;
+            img{
+                width: 34px;
+                height: 38px;
+                margin-right: 10px;
+            }
+            div{
+                font-size: 32px;
+                color: #333333;
+                max-width: 450px;
+                line-height: 40px;
+                font-weight: bold;
+            }
+        }
+        .icons{
+            img{
+                width: 86px;
+                height: 46px;
+            }
+        }
+    }
+    .times{
+        height: 96px;
+        display: flex;
+        box-sizing: border-box;
+        border-bottom: 1px solid #EEEEEE;
+        padding: 0 25px 0 28px;
+        align-items: center;
+        justify-content: space-between;
+        .tim{
+            font-size: 30px;
+            color: #333333;
+            font-weight: bold;
+        }
+        .status{
+            font-size: 30px;
+            color: #3875C6;
+            font-weight: bold;
+        }
+    }
+    .fots{
+        font-size: 24px;
+        color: #333333;
+        box-sizing: border-box;
+        padding: 32px 27px 0 27px;
+        >div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        button{
+            font-size: 30px;
+            color: #FFFFFF;
+            margin-top: 33px;
+            border-radius: 5px;
+            width: 100%;
+            height: 70px;
+            background-color: #31C28A;
+        }
+    }
+}
